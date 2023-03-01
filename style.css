@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "div1 div2 aside";
+    grid-gap: 1rem;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 20% 20% 60%;
+}
+
+#cabecalho {
+    grid-area: header;
+    background-color: gray;
+}
+
+#menu {
+    grid-area: nav;
+    background-color: gray;
+}
+
+#feed {
+    grid-area: div2;
+    background-color: gray;
+}
+
+#amigos {
+    grid-area: aside;
+    background-color: gray;
+}
+
+#amigos_sugeridos {
+    grid-area: div1;
+    background-color: gray;
+}
